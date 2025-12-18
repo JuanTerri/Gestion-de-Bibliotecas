@@ -18,9 +18,9 @@ public class Main {
         List<Reservation> reservationList = new ArrayList<>();
 
         //checkeo para un prestamo vencido
-        Loan loanOverdue = new Loan(bookList.get(0),memberList.get(2), LocalDate.now().minusDays(30),
+        /*Loan loanOverdue = new Loan(bookList.get(0),memberList.get(2), LocalDate.now().minusDays(30),
                 LocalDate.now().minusDays(5),null, LoanStatus.ACTIVE);
-        loanList.add(loanOverdue);
+        loanList.add(loanOverdue);*/
 
         Menu menu = new Menu(bookList, memberList,loanList,reservationList);
         menu.start();
